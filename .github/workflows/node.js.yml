@@ -45,5 +45,5 @@ jobs:
       env:
         user_name: 'github-actions[bot]'
         user_email: 'github-actions[bot]@users.noreply.github.com'
-        github_token: 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
+        github_token: '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'
         repository: ${{ github.repository }}
