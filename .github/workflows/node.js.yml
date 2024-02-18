@@ -1,10 +1,10 @@
-name: CI/CD
+name: test-app
 
 on:
   push:
-    branches: [ master ]
+    branches: [ "main" ]
   pull_request:
-    branches: [ master ]
+    branches: [ "main" ]
 
 jobs:
   build:
@@ -45,6 +45,5 @@ jobs:
       env:
         user_name: 'github-actions[bot]'
         user_email: 'github-actions[bot]@users.noreply.github.com'
-        github_token: ${{ secrets.ACTIONS_DEPLOY_ACCESS_TOKEN }}
+        github_token: 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
         repository: ${{ github.repository }}
-        
