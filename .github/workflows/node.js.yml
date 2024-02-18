@@ -28,7 +28,7 @@ jobs:
     - run: npm ci
     - run: npm run build --if-present
     - run: npm test
-    
+
     # - name: Install dependencies
     #   run: npm install
 
@@ -48,7 +48,4 @@ jobs:
         git remote set-url origin "https://${github_token}@github.com/${repository}"
         npm run deploy
       env:
-        user_name: 'github-actions[bot]'
-        user_email: 'github-actions[bot]@users.noreply.github.com'
-        github_token: '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'
-        repository: ${{ github.repository }}
+        GITHUB_TOKEN: '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'
